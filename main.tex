@@ -1,0 +1,137 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{margin=2cm}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\pagestyle{fancy}
+
+% Nettoyer les styles par défaut
+\fancyhf{}
+
+% En-têtes
+\fancyhead[L]{Fiches d'exercices pour Maximilien (2)} % à gauche
+\fancyhead[R]{Matteo Dubresson} % à droite
+
+% Pieds de page
+\fancyfoot[C]{\thepage} % numéro de page centré
+
+%Titre et généralités
+\title{Fiche d'exercices \\ pour Maximilien (2)}
+\date{19/09/2025}
+\author{}
+
+%Espace entre les subsections
+\titlespacing*{\subsection}{0pt}{5ex plus 0.5ex minus 0.2ex}{1.5ex plus 0.2ex}
+
+
+
+
+\begin{document}
+
+\maketitle
+
+\subsection*{Exercice 1 :}
+
+Soit $(u_n)_{n \in \mathbb{N}}$ la suite définie par $u_0 = 2$ et pour tout $n \in \mathbb{N}$ par :
+\[
+u_{n+1} = 5u_n - 4
+\]
+Montrer que pour tout $n \in \mathbb{N}$ :
+\[
+u_n = 5^n + 1
+\]
+
+\bigskip
+
+\subsection*{Exercice 2 :}
+
+Soit $(y_n)$ la suite définie par $y_0 = 1$, $y_1 = 2$ et pour tout $n \in \mathbb{N}$ :
+\[
+y_{n+2} = 3y_{n+1} - 2y_n
+\]
+
+\begin{enumerate}
+    \item Calculer $y_2$ et $y_3$.
+    \item Montrer par récurrence forte que pour tout $n \in \mathbb{N}$ :
+    \[
+    y_n = 2^n
+    \]
+\end{enumerate}
+
+\bigskip
+
+
+\bigskip
+
+\subsection*{Exercice 3 :}
+
+Soient $P$ et $Q$ deux propositions logiques.
+
+\begin{enumerate}
+    \item Dresser la table de vérité de la proposition $(P \implies Q) \iff (\neg P \lor Q)$.
+    \item En déduire la négation formelle de l'implication $P \implies Q$.
+\end{enumerate}
+
+\bigskip
+
+\subsection*{Exercice 5 :}
+
+Soit $f : \mathbb{R} \to \mathbb{R}$ une fonction. Écrire la négation des propositions suivantes :
+
+\begin{enumerate}
+    \item $\forall x \in \mathbb{R}, \quad f(x) > 0$
+    \item $\exists M \in \mathbb{R}, \quad \forall x \in \mathbb{R}, \quad |f(x)| \le M$
+    \item $\forall x \in \mathbb{R}, \quad \big( f(x) = 0 \implies x \ge 0 \big)$
+\end{enumerate}
+
+\bigskip
+
+\subsection*{Exercice 6 :}
+
+Soit $n \in \mathbb{Z}$. Montrer par contraposée l'assertion suivante :
+\[
+n^2 \text{ est pair} \implies n \text{ est pair}
+\]
+
+
+\subsection*{Exercice 7 :}
+
+Soit $P$ une proposition logique.
+\begin{enumerate}
+    \item Écrire la table de vérité de la proposition $(P \land \neg P)$.
+    \item Comment appelle-t-on ce type de proposition en logique ?
+\end{enumerate}
+
+\bigskip
+
+\subsection*{Exercice 8 :}
+
+Soient $P$, $Q$ et $R$ trois propositions logiques.
+\begin{enumerate}
+    \item Montrer, à l'aide d'une table de vérité ou par le calcul algébrique, l'équivalence suivante (loi de distributivité) :
+    \[
+    P \land (Q \lor R) \iff (P \land Q) \lor (P \land R)
+    \]
+    \item Énoncer la loi de Morgan reliant $\neg (P \land Q)$ aux propositions $\neg P$ et $\neg Q$.
+\end{enumerate}
+
+\bigskip
+
+\subsection*{Exercice 9 :}
+
+Soit $n \in \mathbb{N}$. On considère la proposition $A(n) : « \, n^2 - 1 \text{ est divisible par } 3 \, »$.
+\begin{enumerate}
+    \item La proposition $A(0)$ est-elle vraie ?
+    \item Exprimer à l'aide des quantificateurs la proposition : « Pour tout entier naturel $n$, $A(n)$ est vraie ».
+    \item Donner la négation de cette proposition quantifiée, puis déterminer si la proposition initiale est vraie ou fausse en justifiant par un contre-exemple.
+\end{enumerate}
+
+
+\end{document}
